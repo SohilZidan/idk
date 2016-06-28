@@ -229,7 +229,7 @@ class Auth extends CI_Controller
 			}
 		}		
 	}
-	// so test git vim
+	//
 	function logout()
 	{
 		$data=array();
