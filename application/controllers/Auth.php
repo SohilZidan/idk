@@ -71,8 +71,7 @@ class Auth extends CI_Controller
 		$this->load->model('scholarship_model');
 		$data['degree'] = $this->scholarship_model->_get('degree');
 		$data['country'] = $this->scholarship_model->_get('country');
-		$this->load->view('signup',$data);
-		//$this->load->view('nonuser_signup.php',$data);	
+		$this->load->view('signup',$data);	
 	}
 
 	function nonuser_signup()
@@ -217,7 +216,7 @@ class Auth extends CI_Controller
 				'country_id' => $this->input->post('country'),
 				'degree_id' => $this->input->post('degree')
 				);
-			//var_dump($data);
+			//var_dump($data);  var dump
 			$result = $this->User_model->registration($data);
 			if ($result == true) {
 				$data['message_display'] = 'تم التسجيل بنجاح';
@@ -230,7 +229,7 @@ class Auth extends CI_Controller
 			}
 		}		
 	}
-
+	// so test git vim
 	function logout()
 	{
 		$data=array();
